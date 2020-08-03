@@ -1,0 +1,10 @@
+{
+    "presets": [
+        ["@babel/preset-evn", {
+            "targets":{
+                "node":"current"
+            }
+        }],
+        "@babel/reset-react"
+    ]
+}
