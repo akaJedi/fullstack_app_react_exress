@@ -4,7 +4,7 @@ module.exports = {
     mode:"development",
     entry: path.resolve(__dirname,`src`,`app`),
     output: {
-        path: path.resolve(__dirname,`dist`),
+        path: path.resolve(__dirname,'dist'),
         filename: 'bundle.js',
         publicPath:'/'
     },
@@ -12,11 +12,11 @@ module.exports = {
         extensions: ['.js','.jsx']
     },
     devServer:{
-        historyApiFailback: true
+        historyApiFallback: true
     },
     module: {
         rules:[{
-            test: /|.jsx?/,
+            test: /\.jsx?/,
             loader:'babel-loader'
         }]
     }
